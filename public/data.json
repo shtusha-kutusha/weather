@@ -1,0 +1,26 @@
+{
+    "city": "Krasnodar",
+    "days": [
+        {
+            "temp": "89",
+            "cond": "sunny",
+            "day": "2022-03-27"
+        }, {
+            "temp": "100",
+            "cond": "rainy",
+            "day": "2022-03-27"
+        }, {
+            "temp": "100",
+            "cond": "cloudy",
+            "day": "2022-03-27"
+        }, {
+            "temp": "100",
+            "cond": "snow",
+            "day": "2022-03-27"
+        }, {
+            "temp": "100",
+            "cond": "sunny",
+            "day": "2022-03-27"
+        }
+    ]
+}

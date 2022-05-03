@@ -1,0 +1,107 @@
+body {
+  color: white;
+  background-color: rgb(0, 183, 255);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.weatherApp {
+  margin: 50px 0 0 0;
+  display: grid;
+  grid-template-areas: 
+    ". city city ."
+    ". today switch ."
+    "week week week week";
+  grid-template-columns: 1fr min-content min-content 1fr;
+  grid-template-rows: min-content 1fr 1fr;
+  align-items: center;
+}
+
+.city {
+  grid-area: city;
+  font-size: 40px;
+  text-align: center;
+}
+
+.today {
+  display: grid;
+  grid-template-areas: 
+    "icon temp"
+    ". cond";
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-area: today;
+}
+
+.condition {
+  grid-area: cond;
+  font-size: 20px;
+}
+
+.temperatureSwitch {
+  grid-area: switch;
+  align-self: start;
+  margin: 15px 0 0 15px;
+}
+
+.temperatureSwitchButton {
+  font-size: 25px;
+  border: none;
+  background-color: rgb(0, 183, 255);
+  color: white;
+}
+
+.week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;;
+  grid-area: week;
+  margin: 50px 0 0 0;
+}
+
+.weatherConditionIcon {
+  display: grid;
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+}
+
+.temp {
+  grid-area: temp;
+  font-size: 35px;
+}
+
+.today .temp {
+  font-size: 110px;
+}
+
+.today .weatherConditionIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.today .condition {
+  font-size: 40px;
+}
+
+.week .weatherConditionIcon{
+  padding: 15px 0 0 0;
+}
+
+.week .temp {
+  padding: 5px 0 0 0;
+}
+
+.week .condition {
+  padding: 5px 0 0 0;
+}
+
+.temperatureSwitchButton {
+  opacity: 0.6;
+}
+
+.temperatureSwitchButton:disabled {
+  opacity: 1;
+}
